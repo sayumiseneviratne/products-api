@@ -22,6 +22,10 @@ public abstract class Product {
         this.price = price;
     }
 
+    // No body. Product cannot answer this question,
+    //so every concrete subclass MUST answer it
+    public abstract String getSummary();
+
     public Long getId() {
         return id;
     }
@@ -45,6 +49,7 @@ public abstract class Product {
     public void setName(String name) {
         this.name = name;
     }
+
 
 
 
